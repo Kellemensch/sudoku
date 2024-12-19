@@ -63,15 +63,8 @@ def main():
     elif args.test:
         # Exécuter les tests sur un ensemble d'images
         print("Exécution des tests...")
-        if not args.images_dir or not os.path.exists(args.images_dir):
-            print("Erreur : Vous devez spécifier un dossier d'images existant avec --images_dir.")
-            return
-        if not args.truth or not os.path.exists(args.truth):
-            print("Erreur : Vous devez spécifier un fichier de réponses manuelles avec --truth.")
-            return
-        
         # Lancer les tests en utilisant les images et le fichier de réponses
-        run_tests(args.images_dir, args.truth, debug)
+        run_tests("./test_images/", "./test_images/truth_answers.txt", debug)
 
     else:
         # Aucun argument valide fourni
