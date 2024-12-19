@@ -1,0 +1,12 @@
+pytesseract==0.3.13
+numpy==2.2.0
+matplotlib==3.10.0
+opencv-python
+ultralytics==8.3.50
+torch==2.5.1
+keras==3.7.0
+scipy==1.14.1
+scikit-learn==1.6.0
+scikit-image==0.25.0
+pyparsing==3.2.0
+imutils==0.5.4

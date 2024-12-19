@@ -50,7 +50,7 @@ def run_tests(images_dir, truth_file, debug=False):
             # Résoudre la grille
             solved_grid = np.copy(detected_grid)
             solved_grid = solve_grid(solved_grid)
-            print(f"Grille détectée : \n{detected_grid}\nSolution détectée : \n{solved_grid}\nGrille correcte : \n{true_solution}")
+            print(f"Grille détectée : \n{detected_grid}\nSolution détectée : \n{solved_grid}\nGrille de base correcte : \n{true_solution}")
             print(f"{color}Taux de bonnes réponses pour {image_name}: {grid_accuracy:.2f}%\033[0m\n")
             total_accuracy += grid_accuracy
         else:
@@ -59,4 +59,3 @@ def run_tests(images_dir, truth_file, debug=False):
     # Calcul de la précision moyenne sur toutes les grilles
     average_accuracy = (total_accuracy / total_tests) if total_tests > 0 else 0
     print(f"\033[94mPrécision moyenne sur toutes les grilles: {average_accuracy:.2f}%\033[0m\n")
-    return average_accuracy
