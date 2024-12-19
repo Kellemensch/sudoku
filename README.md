@@ -64,6 +64,8 @@ Le programme peut être utilisé en ligne de commande avec plusieurs arguments.
    ```
    - `--train` : lance l'entrainement des modèles de reconnaissance de grille.
 
+   ___Notez que des modèles déjà entrainés sont disponibles dans le dossier **models/**.___
+
 ---
 
 ## Fonctionnement Global
