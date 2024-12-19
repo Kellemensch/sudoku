@@ -90,6 +90,7 @@ def detect_sudoku_grid(image_path, debug=False):
             # Afficher la grille découpée si le mode debug est activé
             plt.figure(figsize=(10, 10))
             plt.imshow(cv2.cvtColor(img_cropped, cv2.COLOR_BGR2RGB))
+            cv2.imwrite("./solutions/grille.png", img_cropped)
             plt.title(f"Grille de Sudoku découpée: {image_path}")
             plt.axis("off")
             plt.show()

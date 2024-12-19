@@ -54,7 +54,7 @@ def main():
                 for row in solution:
                     print(" ".join(map(str, row)))  # Afficher la solution
                 # Annoter l'image originale avec la solution
-                write_solution_on_image(args.image, solution, "./solution.png")
+                write_solution_on_image(args.image, solution, "./solutions/solution.png")
             else:
                 print("\033[91mPas de solution trouvée\033[0m\n")  # Afficher un message en rouge
         else:
