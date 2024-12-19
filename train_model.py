@@ -7,12 +7,12 @@ def train_grid():
     #torch.cuda.set_device(0)
     # Load a model
     model = YOLO("yolov8l.pt")  # load a base model (recommended for training)
-    model.train(data="/home/baptiste/Documents/python/sudoku_tp/datasets/grid/data.yaml", epochs=100,imgsz=416)  # train the model
+    model.train(data="./datasets/grid/data.yaml", epochs=100,imgsz=416)  # train the model
 
 def train_boxes():
     #torch.cuda.set_device(0)
     model = YOLO("yolov8l.pt")
-    model.train(data="/home/baptiste/Documents/python/sudoku_tp/datasets/boxes/data.yaml", epochs=1,imgsz=416)  # train the model
+    model.train(data="./datasets/boxes/data.yaml", epochs=1,imgsz=416)  # train the model
 
 
 # Digit rcognition
