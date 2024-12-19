@@ -25,7 +25,6 @@ def main():
     if args.debug:
         # Activer le mode debug
         print("Option de debug activée...\n")
-        global debug
         debug = True
     else:
         debug = False
